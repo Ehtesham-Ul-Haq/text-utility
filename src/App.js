@@ -2,8 +2,8 @@ import { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-// import About from './components/About';
 import Alert from './components/Alert';
+// import About from './components/About';
 
 // import {
 //   BrowserRouter,
@@ -54,7 +54,8 @@ function App() {
           {/* <Routes>
             <Route exact path="/about" element={ <About />} /> */}
             {/* <Route exact path="/" element={<TextForm heading="Enter the Text to Analyze" mode={mode} showAlert={showAlert} />} /> */}
-            <TextForm heading="Enter the Text to Analyze" mode={mode} showAlert={showAlert} />
+            <TextForm heading="Text Utility App - Word & Character Counter, Text to Speach" mode={mode} showAlert={showAlert} />
+            {/* <About mode={mode} toggleMode={toggleMode} /> */}
           {/* </Routes> */}
       </div>
     {/* </BrowserRouter> */}
