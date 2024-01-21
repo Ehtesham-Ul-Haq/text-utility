@@ -51,10 +51,10 @@ function App() {
       <Navbar title="Text Utility App" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
       <div className="container my-3">
+        {/* <TextForm heading="Text Utility App - Word & Character Counter, Text to Speach" mode={mode} showAlert={showAlert} /> */}
           <Routes>
-            <Route exact path="/about" element={ <About mode={mode} toggleMode={toggleMode} />} />
-            <Route exact path="/" element={<TextForm heading="Text Utility App - Word & Character Counter, Text to Speach" mode={mode} showAlert={showAlert} />} />
-            {/* <About mode={mode} toggleMode={toggleMode} /> */}
+            <Route exact path='/' element={<TextForm heading="Text Utility App - Word & Character Counter, Text to Speach" mode={mode} showAlert={showAlert} />} />
+            <Route exact path='/about' element={<About  mode={mode} showAlert={showAlert} />} />
           </Routes>
       </div>
     </BrowserRouter>
