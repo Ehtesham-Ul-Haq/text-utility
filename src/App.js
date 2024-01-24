@@ -3,13 +3,13 @@ import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
-import About from './components/About';
+// import About from './components/About';
 
-import {
-  BrowserRouter,
-  Route,
-  Routes,
-} from "react-router-dom";
+// import {
+//   BrowserRouter,
+//   Route,
+//   Routes,
+// } from "react-router-dom";
 
 
 
@@ -47,17 +47,18 @@ function App() {
   return (
 
     <>
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
       <Navbar title="Text Utility App" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
       <div className="container my-3">
         {/* <TextForm heading="Text Utility App - Word & Character Counter, Text to Speach" mode={mode} showAlert={showAlert} /> */}
-          <Routes>
-            <Route exact path='/' element={<TextForm heading="Text Utility App - Word & Character Counter, Text to Speach" mode={mode} showAlert={showAlert} />} />
-            <Route exact path='/about' element={<About  mode={mode} showAlert={showAlert} />} />
-          </Routes>
+          {/* <Routes> */}
+          <TextForm heading="Text Utility App - Word & Character Counter, Text to Speach" mode={mode} showAlert={showAlert} />
+            {/* <Route exact path='/TextForm' element={<TextForm heading="Text Utility App - Word & Character Counter, Text to Speach" mode={mode} showAlert={showAlert} />} />
+            <Route exact path='/about' element={<About  mode={mode} showAlert={showAlert} />} /> */}
+          {/* </Routes> */}
       </div>
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
     </>
 
   );
