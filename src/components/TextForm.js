@@ -61,7 +61,7 @@ export default function TextForm(props) {
             </div>
             <button disabled={text.length===0} className="btn btn-danger mx-2 my-1" onClick={handleUpClick}>Convert to Uppercase</button>
             <button disabled={text.length===0} className="btn btn-danger mx-2 my-1" onClick={handleLowClick}>Convert to Lowercase</button>
-            <button disabled={text.length===0} className="btn btn-danger mx-2 my-1" onClick={capitalizeFirstLetter}>capitalize First Letter</button>
+            <button disabled={text.length===0} className="btn btn-danger mx-2 my-1" onClick={capitalizeFirstLetter}>Capitalize First Letter</button>
             <button disabled={text.length===0} className="btn btn-danger mx-2 my-1" onClick={handleClearClick}>Clear Text</button>
             <button disabled={text.length===0} className="btn btn-danger mx-2 my-1" onClick={handleCopy}>Copy Text</button>
             <button disabled={text.length===0} className="btn btn-danger mx-2 my-1" onClick={handleSpeak}>Text to Speach</button>
