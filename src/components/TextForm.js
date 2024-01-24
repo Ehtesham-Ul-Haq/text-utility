@@ -43,6 +43,11 @@ export default function TextForm(props) {
         props.showAlert("Extra Spaces Removed!","success")
     }
 
+    const capitalizeFirstLetter = () => {
+        let capText = text.charAt(0).toUpperCase() + text.slice(1);
+        setText(capText);
+        props.showAlert("First Letter Capitalized!","success")
+    }
 
 
     const [text, setText] = useState('');
