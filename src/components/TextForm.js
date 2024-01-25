@@ -64,7 +64,7 @@ export default function TextForm(props) {
             <button disabled={text.length===0} className="btn btn-danger mx-2 my-1" onClick={capitalizeFirstLetter}>Capitalize First Letter</button>
             <button disabled={text.length===0} className="btn btn-danger mx-2 my-1" onClick={handleClearClick}>Clear Text</button>
             <button disabled={text.length===0} className="btn btn-danger mx-2 my-1" onClick={handleCopy}>Copy Text</button>
-            <button disabled={text.length===0} className="btn btn-danger mx-2 my-1" onClick={handleSpeak}>Text to Speach</button>
+            <button disabled={text.length===0} className="btn btn-danger mx-2 my-1" onClick={handleSpeak}>Text to Speech</button>
             <button disabled={text.length===0} className="btn btn-danger mx-2 my-1" onClick={handleExtraSpaces}>Remove Extra Spaces</button>
         </div>
 
